@@ -39,7 +39,9 @@ const completion: Fig.Spec = {
             },
           ],
           args: {
-            name: "path",
+            name: "paths",
+            isVariadic: true,
+            isOptional: true,
           },
         },
         {
@@ -56,7 +58,9 @@ const completion: Fig.Spec = {
             },
           ],
           args: {
-            name: "path",
+            name: "paths",
+            isVariadic: true,
+            isOptional: true,
           },
         },
         {
@@ -73,7 +77,9 @@ const completion: Fig.Spec = {
             },
           ],
           args: {
-            name: "path",
+            name: "paths",
+            isVariadic: true,
+            isOptional: true,
           },
         },
         {
