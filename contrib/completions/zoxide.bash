@@ -91,7 +91,7 @@ _zoxide() {
             return 0
             ;;
         zoxide__edit__decrement)
-            opts="-h -V --help --version <PATH>"
+            opts="-h -V --help --version [PATHS]..."
             if [[ ${cur} == -* || ${COMP_CWORD} -eq 3 ]] ; then
                 COMPREPLY=( $(compgen -W "${opts}" -- "${cur}") )
                 return 0
@@ -105,7 +105,7 @@ _zoxide() {
             return 0
             ;;
         zoxide__edit__delete)
-            opts="-h -V --help --version <PATH>"
+            opts="-h -V --help --version [PATHS]..."
             if [[ ${cur} == -* || ${COMP_CWORD} -eq 3 ]] ; then
                 COMPREPLY=( $(compgen -W "${opts}" -- "${cur}") )
                 return 0
@@ -119,7 +119,7 @@ _zoxide() {
             return 0
             ;;
         zoxide__edit__increment)
-            opts="-h -V --help --version <PATH>"
+            opts="-h -V --help --version [PATHS]..."
             if [[ ${cur} == -* || ${COMP_CWORD} -eq 3 ]] ; then
                 COMPREPLY=( $(compgen -W "${opts}" -- "${cur}") )
                 return 0
